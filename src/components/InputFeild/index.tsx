@@ -24,7 +24,7 @@ const InputFeild: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
         onChange={(e) => setTodo(e.target.value)}
         type="input"
         className="input_box"
-        placeholder="输入一个内容"
+        placeholder="enter a content"
       />
       <button className="input_submit" type="submit">
         Go
