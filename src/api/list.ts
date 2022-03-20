@@ -1,4 +1,4 @@
-import { Request, Result } from "../model";
+import { Request } from "../model";
 import request from "./request";
 
 export const getTodoList: Request.FC<any> = (data) => {

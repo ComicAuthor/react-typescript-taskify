@@ -38,7 +38,8 @@ const App: React.FC = () => {
   const onDragEnd = (result: DropResult) => {
     const { source, destination } = result;
     if (!destination) return;
-    if (destination.droppableId == source.droppableId && destination.index == source.index) return;
+    if (destination.droppableId === source.droppableId && destination.index === source.index)
+      return;
 
     let add,
       active = todos,
