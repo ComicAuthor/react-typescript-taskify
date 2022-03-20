@@ -13,6 +13,7 @@ export interface Result {
 }
 
 export declare namespace Request {
+  type Ajax<T> = (config: T) => Promise<Result>;
   type FC<T> = (data: T) => Promise<Result>;
 }
 

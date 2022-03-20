@@ -9,7 +9,7 @@ let ajax = axios.create({
 
 // request.interceptors.response.use((response) => response.data);
 
-const request: Request.FC<any> = (config: AxiosRequestConfig) => {
+const request: Request.Ajax<AxiosRequestConfig> = (config) => {
   return new Promise((resolve, reject) => {
     try {
       ajax(config).then((res: AxiosResponse<Result>) => {
